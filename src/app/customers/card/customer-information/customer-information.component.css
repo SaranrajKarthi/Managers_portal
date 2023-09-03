@@ -1,0 +1,18 @@
+.customerInfo {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #a5a6a8;
+    text-decoration: none;
+    margin-left: 52px;
+    float: left;
+}
+
+
+/* .subTittle {
+    float: left;
+    margin-top: 2px;
+} */
+
+.active {
+    color: #000000;
+}

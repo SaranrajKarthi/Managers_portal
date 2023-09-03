@@ -1,0 +1,42 @@
+<!-- <mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <mat-icon style="font-size: 50px; margin-left: 19px; float: left;">person</mat-icon>
+        <span style="margin-left: 30px; font-size: 32px;float: left; margin-top: 30px;">Customers Information</span>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row style="justify-content: space-between;">
+        <div>
+            <a class="customerInfo">
+                <mat-icon style="float: left; margin-top: 6px">view_list</mat-icon>
+                <span class="subTittle">Customer Details</span>
+            </a>
+            <a class="customerInfo">
+                <mat-icon style="float: left; margin-top: 6px"> place</mat-icon><span class="subTittle">Customer Orders</span>
+            </a>
+            <a class="customerInfo">
+                <mat-icon style="float: left; margin-top: 6px">add</mat-icon><span class="subTittle">Edit</span>
+            </a>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar> -->
+<mat-toolbar style="background: #fff;">
+    <mat-toolbar-row>
+        <mat-icon style="font-size: 50px; margin-left: 19px; float: left;">person</mat-icon>
+        <span style="margin-left: 30px; font-size: 32px;float: left; margin-top: 30px;">Customer Information</span>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row style="justify-content: space-between;">
+        <div>
+            <a class="customerInfo" routerLink='/customer-information/customerdetails' routerLinkActive='active'>
+                <i class="fa fa-list"></i><span>Customer Details</span>
+            </a>
+            <a class="customerInfo" routerLink='/customer-information/customerorders' routerLinkActive='active'>
+                <i class="fa fa-tags"></i><span>Customer Orders</span>
+            </a>
+            <a class="customerInfo" routerLink='/customer-information/editcustomer' routerLinkActive='active'>
+                <i class="bi bi-pencil-square"></i><span class="subTittle">Edit Customer</span>
+            </a>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

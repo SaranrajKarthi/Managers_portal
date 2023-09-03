@@ -1,0 +1,55 @@
+/* .navLink2 {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #a5a6a8;
+    text-decoration: none;
+    margin-left: 52px;
+    float: left;
+}
+
+.subTittle {
+    float: left;
+    margin-top: 2px;
+}
+
+.active {
+    color: #000000;
+} */
+
+.navLink2 {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #a5a6a8;
+    text-decoration: none;
+    margin-left: 52px;
+    padding: 0 10px 0 10px;
+    float: left;
+}
+
+.navLink2:hover:not(.active) {
+    color: #E03930;
+    /* padding: 0 15px 0 15px; */
+}
+
+.navLink2:hover {
+    background-color: #efefef;
+}
+
+.subTittle {
+    float: left;
+    margin-top: 2px;
+}
+
+.pagination {
+    margin-left: 19px;
+}
+
+.active {
+    color: #000;
+}
+
+.router {
+    margin: 32px 70px 35px 70px;
+    /* height: 620px; */
+    overflow: auto;
+}

@@ -1,0 +1,72 @@
+<!-- <mat-toolbar-row>
+    <mat-icon style="font-size: 50px; margin-left: 19px;">person</mat-icon>
+    <span style="margin-left: 30px; font-size: 40px; margin-top: 27px;">Customers</span>
+</mat-toolbar-row>
+<mat-toolbar-row style="margin-top: 10px;">
+    <a routerLink="/customers/card" class="navLink2" routerLinkActive="active">
+        <mat-icon style="float: left;">view_list</mat-icon><span class="subTittle">Card View</span>
+    </a>
+    <a routerLink="/customers/list" class="navLink2" routerLinkActive="active">
+        <mat-icon style="float: left;">view_headline</mat-icon><span class="subTittle">List View</span>
+    </a>
+    <a routerLink="/customers/map-view" class="navLink2" routerLinkActive="active">
+        <mat-icon style="float: left;"> place</mat-icon><span class="subTittle">Map View</span>
+    </a>
+    <a routerLink="/customers/add-member" class="navLink2" routerLinkActive="active">
+        <mat-icon style="float: left;">add</mat-icon><span class="subTittle">Add Member</span>
+    </a>
+</mat-toolbar-row>
+<router-outlet></router-outlet> -->
+<mat-toolbar style="background: #fff;">
+    <mat-toolbar-row>
+        <mat-icon style="font-size: 50px; margin-left: 19px; float: left;">person</mat-icon>
+        <span style="margin-left: 30px; font-size: 32px;float: left; margin-top: 30px;">Customers</span>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row style="justify-content: space-between;">
+        <div>
+            <a class="navLink2" routerLink="/customers/card" routerLinkActive="active">
+                <mat-icon style="float: left; margin-top: 6px">view_list</mat-icon><span class="subTittle">Card View</span>
+            </a>
+            <a class="navLink2" routerLink="/customers/list" routerLinkActive="active">
+                <mat-icon style="float: left; margin-top: 6px">view_headline</mat-icon><span class="subTittle">List View</span>
+            </a>
+            <a class="navLink2" routerLink="/customers/map-view" routerLinkActive="active">
+                <mat-icon style="float: left; margin-top: 6px"> place</mat-icon><span class="subTittle">Map View</span>
+            </a>
+            <a class="navLink2" routerLink="/customers/add-member" routerLinkActive="active">
+                <mat-icon style="float: left; margin-top: 6px"> add</mat-icon><span class="subTittle">Add Member</span>
+            </a>
+        </div>
+        <div style="margin-right: 70px">
+            <span>Filter:</span><br>
+            <input type="text" name="SearchPrfiles">
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+<div class="router">
+    <!-- Customers Outputs-->
+    <router-outlet></router-outlet>
+</div>
+
+<!-- Bottom Navigtation-->
+<nav aria-label="Bottom Page navigation" class="pagination">
+    <ul class="pagination">
+        <li class="page-item">
+            <a class="page-link" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <!--<span class="sr-only">Previous</span>-->
+            </a>
+        </li>
+        <li class="page-item"><a class="page-link">1</a></li>
+        <li class="page-item"><a class="page-link">2</a></li>
+        <li class="page-item"><a class="page-link">3</a></li>
+        <li class="page-item"><a class="page-link">4</a></li>
+        <li class="page-item">
+            <a class="page-link" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <!-- <span class="sr-only">Next</span> -->
+            </a>
+        </li>
+    </ul>
+</nav>

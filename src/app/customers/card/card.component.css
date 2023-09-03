@@ -1,0 +1,64 @@
+/* .customersList {
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    width: 245px;
+    border: 1px solid #a5a6a8;
+    height: auto;
+}
+
+.mat-toolbar {
+    width: auto;
+    background-color: #007af8;
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+.proflesList {
+    margin-top: 5px;
+    display: flex;
+} */
+
+.customersList {
+    /* margin-top: 50px; */
+    /* margin-left: 70px; */
+    /* margin-right: 70px; */
+    /* float: left; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 45px 35px 0;
+    
+    /* border: 1px solid #a5a6a8; */
+    height: 560px;
+}
+
+.customers {
+    width: 245px; /* Set a fixed width for each customer card */
+    margin-right: 20px; /* Add space between customer cards */
+    margin-bottom: 20px; /* Add space below customer cards */
+    border: 1px solid #a5a6a8;
+}
+
+.mat-toolbar {
+    width: auto;
+    background-color: #007af8;
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+.proflesList {
+    margin: 5px 0 8px 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* .active {
+    color: #fff;
+    background-color: #007af8;
+  }
+  .pagination{
+    margin-left: 52px;
+  
+  } */
